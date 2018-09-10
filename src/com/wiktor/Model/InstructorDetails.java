@@ -20,8 +20,8 @@ public class InstructorDetails {
 
     // BIDIRECTIONAL, mappedBy variable name from Instructor class which handle InstructorDetails
     // if you want to delete only the InstructionDetails without Instructor you should add
-    // cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH}
-    @OneToOne(mappedBy = "details", cascade = CascadeType.ALL)
+    // cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH} -> that's because there isn't type CascadeType.REMOVE
+    @OneToOne(mappedBy = "details", cascade = {CascadeType.DETACH,CascadeType.PERSIST, CascadeType.MERGE,CascadeType.REFRESH})
     private Instructor instructor;
 
     public Instructor getInstructor() {

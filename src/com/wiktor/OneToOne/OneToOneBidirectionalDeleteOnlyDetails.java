@@ -6,7 +6,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class OneToOneBidirectionalCascadeDelete {
+public class OneToOneBidirectionalDeleteOnlyDetails {
     public static void main(String[] args) {
 
 
@@ -23,12 +23,10 @@ public class OneToOneBidirectionalCascadeDelete {
 
             session.beginTransaction();
 
-            InstructorDetails instructorDetails = session.get(InstructorDetails.class, 8);
+            InstructorDetails instructorDetails = session.get(InstructorDetails.class, 9);
 
-            System.out.println("tempInstructorDetail: " + instructorDetails);
-            System.out.println("the associated instructor: " + instructorDetails.getInstructor());
+            instructorDetails.getInstructor().setDetails(null); // brake bi-directional link between Instructor and InstructorDetails
 
-            System.out.println("delete tempInstructorDetail: " + instructorDetails);
             session.delete(instructorDetails);
 
             session.getTransaction().commit();
