@@ -1,12 +1,10 @@
 package com.wiktor.OneToOne;
 
-import com.wiktor.Model.Instructor;
-import com.wiktor.Model.InstructorDetails;
+import com.wiktor.Model.InstructorOneToOne;
+import com.wiktor.Model.InstructorDetailsOneToOne;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
 
 public class OneToOne {
     public static void main(String[] args) {
@@ -14,8 +12,8 @@ public class OneToOne {
 
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Instructor.class)
-                .addAnnotatedClass(InstructorDetails.class)
+                .addAnnotatedClass(InstructorOneToOne.class)
+                .addAnnotatedClass(InstructorDetailsOneToOne.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -23,8 +21,8 @@ public class OneToOne {
         try {
             System.out.println("Begin transaction!");
 
-            Instructor tempInstructor = new Instructor("Andrey", "McCain", "McCain@dot.stand.edu.com");
-            InstructorDetails tempDetails = new InstructorDetails("El professore", "teaching people");
+            InstructorOneToOne tempInstructor = new InstructorOneToOne("Andrey", "McCain", "McCain@dot.stand.edu.com");
+            InstructorDetailsOneToOne tempDetails = new InstructorDetailsOneToOne("El professore", "teaching people");
 
             session.beginTransaction();
             tempInstructor.setDetails(tempDetails);

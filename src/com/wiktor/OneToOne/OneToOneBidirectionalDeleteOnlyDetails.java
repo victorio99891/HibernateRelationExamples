@@ -1,7 +1,7 @@
 package com.wiktor.OneToOne;
 
-import com.wiktor.Model.Instructor;
-import com.wiktor.Model.InstructorDetails;
+import com.wiktor.Model.InstructorOneToOne;
+import com.wiktor.Model.InstructorDetailsOneToOne;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -12,8 +12,8 @@ public class OneToOneBidirectionalDeleteOnlyDetails {
 
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Instructor.class)
-                .addAnnotatedClass(InstructorDetails.class)
+                .addAnnotatedClass(InstructorOneToOne.class)
+                .addAnnotatedClass(InstructorDetailsOneToOne.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -23,11 +23,14 @@ public class OneToOneBidirectionalDeleteOnlyDetails {
 
             session.beginTransaction();
 
-            InstructorDetails instructorDetails = session.get(InstructorDetails.class, 9);
+            InstructorDetailsOneToOne instructorDetails = session.get(InstructorDetailsOneToOne.class, 10);
 
-            instructorDetails.getInstructor().setDetails(null); // brake bi-directional link between Instructor and InstructorDetails
+            instructorDetails.getInstructor().setDetails(null); // brake bi-directional link between InstructorOneToOne and InstructorDetailsOneToOne
 
             session.delete(instructorDetails);
+
+           /* InstructorOneToOne tmpIns = session.get(InstructorOneToOne.class, 10);
+            session.delete(tmpIns);*/
 
             session.getTransaction().commit();
             System.out.println("SUCCES!");

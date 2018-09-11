@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "instructor_detail")
-public class InstructorDetails {
+public class InstructorDetailsOneToOne {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,33 +18,33 @@ public class InstructorDetails {
     private String hobby;
 
 
-    // BIDIRECTIONAL, mappedBy variable name from Instructor class which handle InstructorDetails
-    // if you want to delete only the InstructionDetails without Instructor you should add
+    // BIDIRECTIONAL, mappedBy variable name from InstructorOneToOne class which handle InstructorDetailsOneToOne
+    // if you want to delete only the InstructionDetails without InstructorOneToOne you should add
     // cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH} -> that's because there isn't type CascadeType.REMOVE
     @OneToOne(mappedBy = "details", cascade = {CascadeType.DETACH,CascadeType.PERSIST, CascadeType.MERGE,CascadeType.REFRESH})
-    private Instructor instructor;
+    private InstructorOneToOne instructor;
 
-    public Instructor getInstructor() {
+    public InstructorOneToOne getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(Instructor instructor) {
+    public void setInstructor(InstructorOneToOne instructor) {
         this.instructor = instructor;
     }
 
     @Override
     public String toString() {
-        return "InstructorDetails{" +
+        return "InstructorDetailsOneToOne{" +
                 "id=" + id +
                 ", youTubeChannel='" + youTubeChannel + '\'' +
                 ", hobby='" + hobby + '\'' +
                 '}';
     }
 
-    public InstructorDetails() {
+    public InstructorDetailsOneToOne() {
     }
 
-    public InstructorDetails(String youTubeChannel, String hobby) {
+    public InstructorDetailsOneToOne(String youTubeChannel, String hobby) {
         this.youTubeChannel = youTubeChannel;
         this.hobby = hobby;
     }

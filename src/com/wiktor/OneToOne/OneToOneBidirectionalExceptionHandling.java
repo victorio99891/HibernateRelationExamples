@@ -1,7 +1,7 @@
 package com.wiktor.OneToOne;
 
-import com.wiktor.Model.Instructor;
-import com.wiktor.Model.InstructorDetails;
+import com.wiktor.Model.InstructorDetailsOneToOne;
+import com.wiktor.Model.InstructorOneToOne;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -12,8 +12,8 @@ public class OneToOneBidirectionalExceptionHandling {
 
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Instructor.class)
-                .addAnnotatedClass(InstructorDetails.class)
+                .addAnnotatedClass(InstructorOneToOne.class)
+                .addAnnotatedClass(InstructorDetailsOneToOne.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -23,7 +23,7 @@ public class OneToOneBidirectionalExceptionHandling {
 
             session.beginTransaction();
 
-            InstructorDetails instructorDetails = session.get(InstructorDetails.class, 10);
+            InstructorDetailsOneToOne instructorDetails = session.get(InstructorDetailsOneToOne.class, 10);
 
             System.out.println("tempInstructorDetail: " + instructorDetails);
             System.out.println("the associated instructor: " + instructorDetails.getInstructor());

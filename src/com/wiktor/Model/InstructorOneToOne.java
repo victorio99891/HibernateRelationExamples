@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "instructor")
-public class Instructor {
+public class InstructorOneToOne {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,12 +20,12 @@ public class Instructor {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "instructor_detail_id")
-    private InstructorDetails details;
+    private InstructorDetailsOneToOne details;
 
 
     @Override
     public String toString() {
-        return "Instructor{" +
+        return "InstructorOneToOne{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
@@ -34,10 +34,10 @@ public class Instructor {
                 '}';
     }
 
-    public Instructor() {
+    public InstructorOneToOne() {
     }
 
-    public Instructor(String firstName, String lastName, String email) {
+    public InstructorOneToOne(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -75,11 +75,11 @@ public class Instructor {
         this.email = email;
     }
 
-    public InstructorDetails getDetails() {
+    public InstructorDetailsOneToOne getDetails() {
         return details;
     }
 
-    public void setDetails(InstructorDetails details) {
+    public void setDetails(InstructorDetailsOneToOne details) {
         this.details = details;
     }
 }

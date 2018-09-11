@@ -1,7 +1,7 @@
 package com.wiktor.OneToOne;
 
-import com.wiktor.Model.Instructor;
-import com.wiktor.Model.InstructorDetails;
+import com.wiktor.Model.InstructorDetailsOneToOne;
+import com.wiktor.Model.InstructorOneToOne;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -12,8 +12,8 @@ public class DeleteEntity {
 
         SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(Instructor.class)
-                .addAnnotatedClass(InstructorDetails.class)
+                .addAnnotatedClass(InstructorOneToOne.class)
+                .addAnnotatedClass(InstructorDetailsOneToOne.class)
                 .buildSessionFactory();
 
         Session session = factory.getCurrentSession();
@@ -23,7 +23,7 @@ public class DeleteEntity {
             session.beginTransaction();
 
 
-            Instructor instructor = session.get(Instructor.class, 5);
+            InstructorOneToOne instructor = session.get(InstructorOneToOne.class, 5);
 
             if (instructor != null) {
                 System.out.println(instructor.toString());
