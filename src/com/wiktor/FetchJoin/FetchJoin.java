@@ -1,18 +1,17 @@
-package com.wiktor.Eager;
+package com.wiktor.FetchJoin;
 
 
-import com.wiktor.Model.CourseOneToMany;
-import com.wiktor.Model.InstructorOneToMany;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
-public class DeleteCourse {
+public class FetchJoin {
 
     public static void main(String[] args) {
         SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
-                .addAnnotatedClass(InstructorOneToMany.class)
-                .addAnnotatedClass(CourseOneToMany.class)
+                .addAnnotatedClass(InstructorFetchJoin.class)
+                .addAnnotatedClass(CourseFetchJoin.class)
                 .buildSessionFactory();
 
 
@@ -20,9 +19,13 @@ public class DeleteCourse {
         try {
             session.beginTransaction();
 
-            CourseOneToMany course = session.get(CourseOneToMany.class, 12);
+            Query<InstructorFetchJoin> query = session.createQuery("select i from InstructorFetchJoin i " + "JOIN FETCH i.courseList " + "where i.id=:theInstructorId", InstructorFetchJoin.class);
+            query.setParameter("theInstructorId", 1);
 
-            session.delete(course);
+
+            InstructorFetchJoin ins = query.getSingleResult();
+
+            System.out.println("luv2code: Instructor: " + ins);
 
             session.getTransaction().commit();
         } catch (Exception e) {

@@ -1,10 +1,10 @@
-package com.wiktor.Model;
+package com.wiktor.Eager;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "course")
-public class CourseOneToMany {
+public class CourseEager {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,13 +16,13 @@ public class CourseOneToMany {
 
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "instructor_id")
-    private InstructorOneToMany instructor;
+    private InstructorEager instructor;
 
 
-    public CourseOneToMany() {
+    public CourseEager() {
     }
 
-    public CourseOneToMany(String title) {
+    public CourseEager(String title) {
         this.title = title;
     }
 
@@ -51,11 +51,11 @@ public class CourseOneToMany {
         this.title = title;
     }
 
-    public InstructorOneToMany getInstructor() {
+    public InstructorEager getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(InstructorOneToMany instructor) {
+    public void setInstructor(InstructorEager instructor) {
         this.instructor = instructor;
     }
 }

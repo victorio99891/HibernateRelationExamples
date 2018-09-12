@@ -1,13 +1,9 @@
 package com.wiktor.OneToMany;
 
 
-import com.wiktor.Model.CourseOneToMany;
-import com.wiktor.Model.InstructorOneToMany;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-
-import java.util.List;
 
 public class AddCoursesToInstructor {
 

@@ -1,4 +1,6 @@
-package com.wiktor.Model;
+package com.wiktor.OneToMany;
+
+import com.wiktor.OneToMany.CourseOneToMany;
 
 import javax.persistence.*;
 import java.util.ArrayList;

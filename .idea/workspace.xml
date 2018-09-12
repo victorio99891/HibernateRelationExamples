@@ -2,17 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="900354e7-79fa-4930-87bb-1ad66b807d8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/AddCoursesToInstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/DeleteCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/AddCoursesToInstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/DeleteCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Model/CourseEager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Model/CourseLazy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorEager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorLazy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/FetchJoin/CourseFetchJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/FetchJoin/FetchJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/FetchJoin/InstructorFetchJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/CourseOneToManyUnidirectional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/InstructorOneToManyUnidirectional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/ObtainInstructorCourses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/ReviewOneToManyUnidirectional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/second-hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Eager/AddCoursesToInstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Eager/DeleteCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Lazy/AddCoursesToInstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Lazy/DeleteCourse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Lazy/ObtainInstructorCourses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Lazy/ObtainInstructorCourses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Model/CourseLazy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HibernateRelationsExamples/com/wiktor/Model/CourseLazy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Eager/AddCoursesToInstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Eager/DeleteCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Lazy/AddCoursesToInstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Lazy/DeleteCourse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/CourseEager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/CourseEager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/CourseLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/CourseLazy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/CourseOneToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToMany/CourseOneToMany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorDetailsOneToOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/InstructorDetailsOneToOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorEager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Eager/InstructorEager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/Lazy/InstructorLazy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorOneToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToMany/InstructorOneToMany.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/Model/InstructorOneToOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/InstructorOneToOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToMany/AddCoursesToInstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToMany/AddCoursesToInstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToMany/DeleteCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToMany/DeleteCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToMany/ObtainInstructorCourses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToMany/ObtainInstructorCourses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/DeleteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/DeleteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalCascadeDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalCascadeDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalDeleteOnlyDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalDeleteOnlyDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalExceptionHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOneBidirectionalExceptionHandling.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,73 +66,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="47" />
-          <entry key="java" value="4609" />
-          <entry key="xml" value="45" />
+          <entry key="java" value="7347" />
+          <entry key="xml" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4609" />
+          <entry key="JAVA" value="7347" />
           <entry key="PLAIN_TEXT" value="47" />
-          <entry key="XML" value="45" />
+          <entry key="XML" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="48" />
-          <entry key="xml" value="3" />
+          <entry key="java" value="80" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="48" />
-          <entry key="XML" value="3" />
+          <entry key="JAVA" value="80" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorEager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorLazy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,7 +127,6 @@
         <option value="$PROJECT_DIR$/src/com/wiktor/OneToMany/DeleteCourse.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/OneToMany/ObtainInstructorCourses.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/EagerAndLazy/OneToMany/AddCoursesToInstructor.java" />
-        <option value="$PROJECT_DIR$/src/com/wiktor/Model/CourseLazy.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/Model/CourseEager.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/Lazy/OneToMany/AddCoursesToInstructor.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/Lazy/AddCoursesToInstructor.java" />
@@ -148,6 +135,16 @@
         <option value="$PROJECT_DIR$/src/com/wiktor/Model/InstructorLazy.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java" />
         <option value="$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/CourseLazy.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/InstructorFetchJoin.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/CourseFetchJoin.java" />
+        <option value="$PROJECT_DIR$/src/second-hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/FetchJoin/FetchJoin.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/ObtainInstructorCourses.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/InstructorOneToManyUnidirectional.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/Test.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/CourseOneToManyUnidirectional.java" />
+        <option value="$PROJECT_DIR$/src/com/wiktor/Model/ReviewOneToManyUnidirectional.java" />
       </list>
     </option>
   </component>
@@ -204,27 +201,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="wiktor" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HibernateRelationsExamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HibernateRelationsExamples" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wiktor" type="462c0819:PsiDirectoryNode" />
-              <item name="Eager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HibernateRelationsExamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HibernateRelationsExamples" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wiktor" type="462c0819:PsiDirectoryNode" />
-              <item name="Lazy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HibernateRelationsExamples" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HibernateRelationsExamples" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="wiktor" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -237,21 +213,23 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536746012747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536773014200" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wiktor.OneToManyUnidirectional" />
       <recent name="com.wiktor.Model" />
+      <recent name="com.wiktor.FetchJoin" />
       <recent name="com.wiktor.OneToMany" />
       <recent name="com.wiktor.OneToOne" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\src" />
       <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\src\com\wiktor\Eager" />
       <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\src\com\wiktor\Lazy" />
       <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\src\com\wiktor\EagerAndLazy" />
       <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\src\com\wiktor" />
-      <recent name="C:\Users\Wiktor\IdeaProjects\HibernateRelationsExamples\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -266,26 +244,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ObtainInstructorCourses (1)">
-    <configuration name="AddCoursesToInstructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wiktor.OneToMany.AddCoursesToInstructor" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="FetchJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wiktor.FetchJoin.FetchJoin" />
       <module name="HibernateRelationsExamples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wiktor.OneToMany.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteCourse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wiktor.OneToMany.DeleteCourse" />
-      <module name="HibernateRelationsExamples" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wiktor.OneToMany.*" />
+          <option name="PATTERN" value="com.wiktor.FetchJoin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -319,12 +284,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObtainInstructorCourses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wiktor.OneToMany.ObtainInstructorCourses" />
+    <configuration name="ObtainInstructorCourses (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wiktor.OneToManyUnidirectional.ObtainInstructorCourses" />
       <module name="HibernateRelationsExamples" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wiktor.OneToMany.*" />
+          <option name="PATTERN" value="com.wiktor.OneToManyUnidirectional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wiktor.OneToManyUnidirectional.Test" />
+      <module name="HibernateRelationsExamples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wiktor.OneToManyUnidirectional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -333,19 +311,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.AddCoursesToInstructor" />
-      <item itemvalue="Application.ObtainInstructorCourses" />
-      <item itemvalue="Application.DeleteCourse" />
       <item itemvalue="Application.ObtainInstructorCourses (1)" />
       <item itemvalue="Application.ObtainInstructorCourses (2)" />
+      <item itemvalue="Application.FetchJoin" />
+      <item itemvalue="Application.ObtainInstructorCourses (3)" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ObtainInstructorCourses (3)" />
+        <item itemvalue="Application.FetchJoin" />
         <item itemvalue="Application.ObtainInstructorCourses (1)" />
         <item itemvalue="Application.ObtainInstructorCourses (2)" />
-        <item itemvalue="Application.ObtainInstructorCourses" />
-        <item itemvalue="Application.DeleteCourse" />
-        <item itemvalue="Application.AddCoursesToInstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -368,18 +346,17 @@
       <workItem from="1536586277455" duration="9401000" />
       <workItem from="1536656473309" duration="4000" />
       <workItem from="1536661329269" duration="4294000" />
-      <workItem from="1536745124369" duration="839000" />
+      <workItem from="1536745124369" duration="11301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24583000" />
+    <option name="totallyTimeSpent" value="35045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19914803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19914803" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -389,8 +366,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31613612" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39956093" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2766191" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956093" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -416,24 +393,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToOne/DeleteEntity.java">
@@ -472,58 +431,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorDetailsOneToMany.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorOneToOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/CourseOneToMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="106" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorDetailsOneToOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorOneToMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-678">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToOne/OneToOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/AddCoursesToInstructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -537,23 +448,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/ObtainInstructorCourses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/EagerAndLazy/OneToMany/AddCoursesToInstructor.java" />
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/EagerAndLazy/OneToMany/DeleteCourse.java" />
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/EagerAndLazy/OneToMany/ObtainInstructorCourses.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/CourseLazy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="57" column="44" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/DeleteCourse.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -566,41 +463,185 @@
     <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/DeleteCourse.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorLazy.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/lang/Throwable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state relative-caret-position="289">
+          <caret line="637" column="16" selection-start-line="637" selection-start-column="16" selection-end-line="637" selection-end-column="16" />
+          <folding>
+            <element signature="e#26290#26291#0" expanded="true" />
+            <element signature="e#26333#26334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="34" column="52" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/ObtainInstructorCourses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="75" selection-end-line="33" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/second-hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="72" lean-forward="true" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/FetchJoin/FetchJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/AddCoursesToInstructor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="30" column="100" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/CourseEager.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/ObtainInstructorCourses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+        <state relative-caret-position="531">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Model/InstructorEager.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="252">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/ObtainInstructorCourses.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/CourseEager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/ObtainInstructorCourses.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/CourseLazy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="40" column="37" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/FetchJoin/CourseFetchJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/CourseOneToMany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/CourseOneToManyUnidirectional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1631#1632#0" expanded="true" />
+            <element signature="e#1667#1668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToOne/InstructorDetailsOneToOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Eager/InstructorEager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/FetchJoin/InstructorFetchJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/Lazy/InstructorLazy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToMany/InstructorOneToMany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/InstructorOneToManyUnidirectional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToOne/InstructorOneToOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wiktor/OneToManyUnidirectional/ReviewOneToManyUnidirectional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,10 +1,6 @@
 package com.wiktor.Lazy;
 
 
-import com.wiktor.Model.CourseLazy;
-import com.wiktor.Model.CourseOneToMany;
-import com.wiktor.Model.InstructorLazy;
-import com.wiktor.Model.InstructorOneToMany;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -32,7 +28,7 @@ public class ObtainInstructorCourses {
             System.out.println("Courses of user: " + instructor.getFirstName() + " " + instructor.getLastName());
             System.out.println("==============================================================================");
             for (CourseLazy course : instructor.getCourseList()) {
-                System.out.println(course);
+                System.out.println(course.toString());
             }
             if (instructor.getCourseList().size() == 0) {
                 System.out.println("This instructor don't have any courses!");

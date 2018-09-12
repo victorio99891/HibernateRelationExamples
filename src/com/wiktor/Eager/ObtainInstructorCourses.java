@@ -1,10 +1,6 @@
 package com.wiktor.Eager;
 
 
-import com.wiktor.Model.CourseEager;
-import com.wiktor.Model.CourseOneToMany;
-import com.wiktor.Model.InstructorEager;
-import com.wiktor.Model.InstructorOneToMany;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

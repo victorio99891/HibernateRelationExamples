@@ -1,6 +1,7 @@
-package com.wiktor.Model;
+package com.wiktor.OneToOne;
 
 import javax.persistence.*;
+import javax.persistence.OneToOne;
 
 @Entity
 @Table(name = "instructor_detail")

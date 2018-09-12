@@ -1,4 +1,6 @@
-package com.wiktor.Model;
+package com.wiktor.OneToManyUnidirectional;
+
+import com.wiktor.OneToManyUnidirectional.CourseOneToManyUnidirectional;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -6,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "instructor")
-public class InstructorEager {
+public class InstructorOneToManyUnidirectional {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,11 +22,11 @@ public class InstructorEager {
     @Column(name = "email")
     private String email;
 
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "instructor", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
-    private List<CourseEager> courseList;
+    @OneToMany(fetch = FetchType.LAZY,mappedBy = "instructor", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private List<CourseOneToManyUnidirectional> courseList;
 
 
-    public void add(CourseEager course) {
+    public void add(CourseOneToManyUnidirectional course) {
         if (courseList == null) {
             courseList = new ArrayList<>();
         }
@@ -43,10 +45,10 @@ public class InstructorEager {
                 '}';
     }
 
-    public InstructorEager() {
+    public InstructorOneToManyUnidirectional() {
     }
 
-    public InstructorEager(String firstName, String lastName, String email) {
+    public InstructorOneToManyUnidirectional(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -84,11 +86,11 @@ public class InstructorEager {
         this.email = email;
     }
 
-    public List<CourseEager> getCourseList() {
+    public List<CourseOneToManyUnidirectional> getCourseList() {
         return courseList;
     }
 
-    public void setCourseList(List<CourseEager> courseList) {
+    public void setCourseList(List<CourseOneToManyUnidirectional> courseList) {
         this.courseList = courseList;
     }
 }

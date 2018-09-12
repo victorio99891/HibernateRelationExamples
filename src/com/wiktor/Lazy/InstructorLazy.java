@@ -1,4 +1,6 @@
-package com.wiktor.Model;
+package com.wiktor.Lazy;
+
+import com.wiktor.Lazy.CourseLazy;
 
 import javax.persistence.*;
 import java.util.ArrayList;

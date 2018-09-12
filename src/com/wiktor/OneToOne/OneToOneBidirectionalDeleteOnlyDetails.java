@@ -1,7 +1,5 @@
 package com.wiktor.OneToOne;
 
-import com.wiktor.Model.InstructorOneToOne;
-import com.wiktor.Model.InstructorDetailsOneToOne;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

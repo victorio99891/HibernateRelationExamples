@@ -1,10 +1,14 @@
-package com.wiktor.Model;
+package com.wiktor.FetchJoin;
+
+import com.wiktor.FetchJoin.CourseFetchJoin;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "instructor")
-public class InstructorOneToOne {
+public class InstructorFetchJoin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,26 +22,33 @@ public class InstructorOneToOne {
     @Column(name = "email")
     private String email;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "instructor_detail_id")
-    private InstructorDetailsOneToOne details;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "instructor", cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    private List<CourseFetchJoin> courseList;
+
+
+    public void add(CourseFetchJoin course) {
+        if (courseList == null) {
+            courseList = new ArrayList<>();
+        }
+        courseList.add(course);
+        course.setInstructor(this);
+    }
 
 
     @Override
     public String toString() {
-        return "InstructorOneToOne{" +
+        return "InstructorFetchJoin{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", details=" + details +
                 '}';
     }
 
-    public InstructorOneToOne() {
+    public InstructorFetchJoin() {
     }
 
-    public InstructorOneToOne(String firstName, String lastName, String email) {
+    public InstructorFetchJoin(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -75,11 +86,11 @@ public class InstructorOneToOne {
         this.email = email;
     }
 
-    public InstructorDetailsOneToOne getDetails() {
-        return details;
+    public List<CourseFetchJoin> getCourseList() {
+        return courseList;
     }
 
-    public void setDetails(InstructorDetailsOneToOne details) {
-        this.details = details;
+    public void setCourseList(List<CourseFetchJoin> courseList) {
+        this.courseList = courseList;
     }
 }

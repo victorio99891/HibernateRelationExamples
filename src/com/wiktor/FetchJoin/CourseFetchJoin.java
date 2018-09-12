@@ -1,10 +1,10 @@
-package com.wiktor.Model;
+package com.wiktor.FetchJoin;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "course")
-public class CourseEager {
+public class CourseFetchJoin {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,22 +16,21 @@ public class CourseEager {
 
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "instructor_id")
-    private InstructorEager instructor;
+    private InstructorFetchJoin instructor;
 
 
-    public CourseEager() {
+    public CourseFetchJoin() {
     }
 
-    public CourseEager(String title) {
+    public CourseFetchJoin(String title) {
         this.title = title;
     }
 
     @Override
     public String toString() {
-        return "CourseOneToMany{" +
+        return "CourseLazy{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", instructor=" + instructor +
                 '}';
     }
 
@@ -51,11 +50,11 @@ public class CourseEager {
         this.title = title;
     }
 
-    public InstructorEager getInstructor() {
+    public InstructorFetchJoin getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(InstructorEager instructor) {
+    public void setInstructor(InstructorFetchJoin instructor) {
         this.instructor = instructor;
     }
 }
