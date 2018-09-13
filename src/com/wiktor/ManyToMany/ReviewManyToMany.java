@@ -1,13 +1,11 @@
-package com.wiktor.OneToManyUnidirectional;
+package com.wiktor.ManyToMany;
 
-
-import com.wiktor.OneToManyUnidirectional.CourseOneToManyUnidirectional;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "reviews")
-public class ReviewOneToManyUnidirectional {
+@Table(name = "review")
+public class ReviewManyToMany {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +16,7 @@ public class ReviewOneToManyUnidirectional {
     private String comment;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.REFRESH, CascadeType.PERSIST, CascadeType.MERGE})
-    private CourseOneToManyUnidirectional course;
+    private CourseManyToMany course;
 
 
     @Override
@@ -30,10 +28,10 @@ public class ReviewOneToManyUnidirectional {
     }
 
 
-    public ReviewOneToManyUnidirectional() {
+    public ReviewManyToMany() {
     }
 
-    public ReviewOneToManyUnidirectional(String comment) {
+    public ReviewManyToMany(String comment) {
         this.comment = comment;
     }
 
@@ -53,11 +51,11 @@ public class ReviewOneToManyUnidirectional {
         this.comment = comment;
     }
 
-    public CourseOneToManyUnidirectional getCourse() {
+    public CourseManyToMany getCourse() {
         return course;
     }
 
-    public void setCourse(CourseOneToManyUnidirectional course) {
+    public void setCourse(CourseManyToMany course) {
         this.course = course;
     }
 }

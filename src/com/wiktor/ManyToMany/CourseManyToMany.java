@@ -1,12 +1,12 @@
-package com.wiktor.OneToManyUnidirectional;
+package com.wiktor.ManyToMany;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "courses")
-public class CourseOneToManyUnidirectional {
+@Table(name = "course")
+public class CourseManyToMany {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,12 +18,25 @@ public class CourseOneToManyUnidirectional {
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "instructor_id")
-    private InstructorOneToManyUnidirectional instructor;
+    private InstructorManyToMany instructor;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "course", cascade = {CascadeType.ALL})
-    private List<ReviewOneToManyUnidirectional> comments_list;
+    private List<ReviewManyToMany> comments_list;
 
-    public void add(ReviewOneToManyUnidirectional review) {
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+    @JoinTable(name = "course_student", joinColumns = @JoinColumn(name = "course_id"), inverseJoinColumns = @JoinColumn(name = "student_id"))
+    private List<Student> studentList;
+
+
+    public void addStudent(Student student) {
+        if (studentList == null) {
+            studentList = new ArrayList<>();
+        }
+        studentList.add(student);
+    }
+
+
+    public void add(ReviewManyToMany review) {
         if (comments_list == null) {
             comments_list = new ArrayList<>();
         }
@@ -31,10 +44,10 @@ public class CourseOneToManyUnidirectional {
         review.setCourse(this);
     }
 
-    public CourseOneToManyUnidirectional() {
+    public CourseManyToMany() {
     }
 
-    public CourseOneToManyUnidirectional(String title) {
+    public CourseManyToMany(String title) {
         this.title = title;
     }
 
@@ -64,19 +77,27 @@ public class CourseOneToManyUnidirectional {
         this.title = title;
     }
 
-    public InstructorOneToManyUnidirectional getInstructor() {
+    public InstructorManyToMany getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(InstructorOneToManyUnidirectional instructor) {
+    public void setInstructor(InstructorManyToMany instructor) {
         this.instructor = instructor;
     }
 
-    public List<ReviewOneToManyUnidirectional> getComments_list() {
+    public List<ReviewManyToMany> getComments_list() {
         return comments_list;
     }
 
-    public void setComments_list(List<ReviewOneToManyUnidirectional> comments_list) {
+    public void setComments_list(List<ReviewManyToMany> comments_list) {
         this.comments_list = comments_list;
+    }
+
+    public List<Student> getStudentList() {
+        return studentList;
+    }
+
+    public void setStudentList(List<Student> studentList) {
+        this.studentList = studentList;
     }
 }
